@@ -1,10 +1,12 @@
 .table-responsive {
-  height: 244px;
   width:100%;
-  overflow-y: scroll;
   overflow-x: scroll;
   -ms-overflow-style: -ms-autohiding-scrollbar;
   -webkit-overflow-scrolling: touch;
+}
+.tableresponsive {
+  height: 244px;
+  overflow-y: scroll;
   position: relative;
 }
 
@@ -59,6 +61,7 @@
   left:0;
 }
 
+/*.*/
 .gridStyle {
 height: 300px;
 }
@@ -80,4 +83,10 @@ background-color: hotpink;
 color: white;
 }
 
+/*.*/
+.expandergrid{
 
+  td:first-child{
+    width:150px;
+  }
+}

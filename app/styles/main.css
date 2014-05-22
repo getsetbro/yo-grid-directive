@@ -1,35 +1,39 @@
 /* line 1, ../sass/main.scss */
 .table-responsive {
-  height: 244px;
   width: 100%;
-  overflow-y: scroll;
   overflow-x: scroll;
   -ms-overflow-style: -ms-autohiding-scrollbar;
   -webkit-overflow-scrolling: touch;
+}
+
+/* line 7, ../sass/main.scss */
+.tableresponsive {
+  height: 244px;
+  overflow-y: scroll;
   position: relative;
 }
 
-/* line 11, ../sass/main.scss */
+/* line 13, ../sass/main.scss */
 .grid-dir {
   position: relative;
 }
 
-/* line 14, ../sass/main.scss */
+/* line 16, ../sass/main.scss */
 .grid-dir table {
   margin-bottom: 0;
 }
 
-/* line 17, ../sass/main.scss */
+/* line 19, ../sass/main.scss */
 .grid-dir .table > tbody > tr > td {
   white-space: normal;
 }
 
-/* line 20, ../sass/main.scss */
+/* line 22, ../sass/main.scss */
 .grid-dir .table > tbody > tr > td:first-child, .grid-dir .table > thead > tr > th {
   white-space: nowrap;
 }
 
-/* line 23, ../sass/main.scss */
+/* line 25, ../sass/main.scss */
 .toprow, .leftrow {
   position: absolute;
   top: 0;
@@ -37,19 +41,19 @@
   background-color: white;
 }
 
-/* line 29, ../sass/main.scss */
+/* line 31, ../sass/main.scss */
 .toprow {
   right: 0;
   height: 33px;
   overflow: hidden;
 }
 
-/* line 34, ../sass/main.scss */
+/* line 36, ../sass/main.scss */
 .leftrow, .leftrow th, .leftrow td {
   width: 133px;
 }
 
-/* line 37, ../sass/main.scss */
+/* line 39, ../sass/main.scss */
 .leftrow {
   overflow: hidden;
   top: 0;
@@ -58,24 +62,24 @@
   box-shadow: 4px 0 4px -4px rgba(55, 55, 55, 0.5);
 }
 
-/* line 44, ../sass/main.scss */
+/* line 46, ../sass/main.scss */
 .toprow table, .leftrow tbody {
   position: absolute;
   top: 0;
   left: 0;
 }
 
-/* line 49, ../sass/main.scss */
+/* line 51, ../sass/main.scss */
 .leftrow table {
   table-layout: fixed;
 }
 
-/* line 52, ../sass/main.scss */
+/* line 54, ../sass/main.scss */
 .leftrow tbody {
   top: 31px;
 }
 
-/* line 55, ../sass/main.scss */
+/* line 57, ../sass/main.scss */
 .leftrow thead {
   background-color: #fff;
   position: absolute;
@@ -83,31 +87,38 @@
   left: 0;
 }
 
-/* line 62, ../sass/main.scss */
+/*.*/
+/* line 65, ../sass/main.scss */
 .gridStyle {
   height: 300px;
 }
 
-/* line 65, ../sass/main.scss */
+/* line 68, ../sass/main.scss */
 .green {
   background-color: green;
   color: white;
 }
 
-/* line 69, ../sass/main.scss */
+/* line 72, ../sass/main.scss */
 .selected .green {
   background-color: darkgreen;
   color: white;
 }
 
-/* line 73, ../sass/main.scss */
+/* line 76, ../sass/main.scss */
 .pink {
   background-color: pink;
   color: red;
 }
 
-/* line 78, ../sass/main.scss */
+/* line 81, ../sass/main.scss */
 .selected .pink {
   background-color: hotpink;
   color: white;
+}
+
+/*.*/
+/* line 89, ../sass/main.scss */
+.expandergrid td:first-child {
+  width: 150px;
 }
