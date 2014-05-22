@@ -1,12 +1,14 @@
+/* global angular */
+
 'use strict';
 
 angular.module('griddirApp')
-  .directive('ngGridDirective', function () {
+  .directive('nggriddirective', function () {
     return {
-      template: '<div></div>',
+      template: '<div>nggriddirective</div>',
       restrict: 'E',
       link: function postLink(scope, element, attrs) {
-        element.text('this is the ngGridDirective directive');
+        //element.text('this is the ngGridDirective directive');
       }
     };
   });
