@@ -6,7 +6,6 @@ angular.module('griddirApp')
     return {
       templateUrl: 'partials/modaldirective.html',
       restrict: 'E',
-      scope: '=',
       link: function postLink(scope, element, attrs) {
         //element.text('this is the griddirective directive');
         scope.header = attrs.hdr;

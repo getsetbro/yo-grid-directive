@@ -1,0 +1,83 @@
+.table-responsive {
+  height: 244px;
+  width:100%;
+  overflow-y: scroll;
+  overflow-x: scroll;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  -webkit-overflow-scrolling: touch;
+  position: relative;
+}
+
+.grid-dir{
+  position: relative;
+}
+.grid-dir table{
+  margin-bottom: 0
+}
+.grid-dir .table>tbody>tr>td {
+  white-space: normal;
+}
+.grid-dir .table>tbody>tr>td:first-child, .grid-dir .table>thead>tr>th {
+  white-space: nowrap;
+}
+.toprow, .leftrow{
+  position: absolute;
+  top:0;
+  left:0;
+  background-color: #fff
+}
+.toprow{
+  right: 0;
+  height:33px;
+  overflow: hidden;
+}
+.leftrow, .leftrow th, .leftrow td{
+  width:133px;
+}
+.leftrow{
+  overflow: hidden;
+  top:0;
+  left:0;
+  bottom:0;
+  box-shadow: 4px 0 4px -4px rgba(55,55,55,.5)
+}
+.toprow table, .leftrow tbody{
+  position: absolute;
+  top:0;
+  left:0;
+}
+.leftrow table{
+  table-layout: fixed;
+}
+.leftrow tbody{
+  top:31px;
+}
+.leftrow thead{
+  background-color: #fff;
+  position:absolute;
+  top:0;
+  left:0;
+}
+
+.gridStyle {
+height: 300px;
+}
+.green {
+background-color: green;
+color: white;
+}
+.selected .green {
+background-color: darkgreen;
+color: white;
+}
+.pink {
+background-color: pink;
+color: red;
+}
+
+.selected .pink {
+background-color: hotpink;
+color: white;
+}
+
+

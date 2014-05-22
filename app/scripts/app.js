@@ -22,6 +22,10 @@ angular
         templateUrl: 'views/nggrid.html',
         controller: 'NggridCtrl'
       })
+      .when('/multiselect', {
+        templateUrl: 'views/multiselect.html',
+        controller: 'MultiselectCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });

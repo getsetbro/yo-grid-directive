@@ -28,7 +28,7 @@ angular.module('griddirApp')
         showFooter: true,
         enablePinning: true,
         selectedItems: $scope.mySelections,
-      multiSelect: false,
+        multiSelect: false,
         columnDefs: [{field: "name", width: 120, pinned: true },
                     { field: "age", width: 120, cellTemplate: '<div ng-class="{green: row.getProperty(col.field) > 30}"><div class="ngCellText">{{row.getProperty(col.field)}}</div></div>'},
                     { field: "birthday", width: 120 },

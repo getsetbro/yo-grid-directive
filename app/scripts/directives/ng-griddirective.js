@@ -7,6 +7,7 @@ angular.module('griddirApp')
     return {
       template: '<div>nggriddirective</div>',
       restrict: 'E',
+      replace: true,
       link: function postLink(scope, element, attrs) {
         //element.text('this is the ngGridDirective directive');
       }
