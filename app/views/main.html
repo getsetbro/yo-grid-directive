@@ -3,24 +3,17 @@
   <table class="table table-striped table-bordered table-condensed">
     <thead>
       <tr>
-      <th ng-repeat="hdr in tabular[0]">hdr <span class="glyphicon glyphicon-chevron-down"></span></th>
+      <th ng-repeat="hdr in tabularHDR">{{hdr | uppercase}} <i class="fa fa-angle-down"></i></th>
+      <th></th>
       </tr>
     </thead>
-    <tbody ng-repeat="tr in tabular">
-      <tr>
-        <td ng-repeat="td in tr">{{td}} <button type="button" ng-show="$index == (tr.length - 1)" ng-click="select($parent.$index)">more...</button></td>
-      </tr>
-      <tr ng-show="selected == $index">
-        <td colspan="{{tr.length}}">
-        <button class="btn btn-xs btn-info">info</button>
-        <hr>
-        <table class="table table-striped table-bordered table-condensed">
-          <tr>
-            <td ng-repeat="td in tr">{{td}}</td>
-          </tr>
-        </table>
-        <hr>
-        <div class="well">...</div>
+    <tbody>
+      <tr ng-repeat="(trIndex, tr) in tabular" id="tr{{trIndex}}">
+        <td ng-repeat="td in tr">
+          {{td}}
+        </td>
+        <td>
+          <i class="fa fa-angle-right" ng-click="select(trIndex, tr.length)"></i>
         </td>
       </tr>
     </tbody>
