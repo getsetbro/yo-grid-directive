@@ -1,6 +1,15 @@
 <h4>grid with expand</h4>
 <div class="table-responsive expandergrid">
-  <table class="table table-striped table-bordered table-condensed">
+  <table class="table table-striped table-bordered table-hover table-condensed">
+    <caption class="clearfix">
+      <div class="pull-right">
+        <button type="button" class="btn btn-default btn-xs"><i class="fa fa-plus-square-o"></i>
+        Add New</button>
+        <button type="button" class="btn btn-default btn-xs"><i class="fa fa-download"></i>
+        Export View</button>
+      </div>
+      <span class="pull-left">10 of 10 records</span>
+    </caption>
     <thead>
       <tr>
       <th ng-repeat="hdr in tabularHDR">{{hdr | uppercase}} <i class="fa fa-angle-down"></i></th>

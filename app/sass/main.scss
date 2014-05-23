@@ -4,6 +4,15 @@
   overflow-x: scroll;
   -ms-overflow-style: -ms-autohiding-scrollbar;
   -webkit-overflow-scrolling: touch;
+
+  caption{
+    background-color: #eee;
+    padding:1px 5px;
+  }
+  thead{
+    background-color: #000;
+    color: white
+  }
 }
 
 .tableresponsive {
