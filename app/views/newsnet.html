@@ -1,0 +1,14 @@
+<article class="row">
+  <nav class="col-sm-3">
+      <a ng-repeat="itm in items" ng-click="select($index)" ng-class="{active: selected == $index}">
+        {{itm}}
+        <br>line 2
+        <br>line 3
+        <br>line 4
+        <br>line 5
+      </a>
+  </nav>
+  <div class="col-sm-9">
+    <div>item</div>
+  </div>
+</div>

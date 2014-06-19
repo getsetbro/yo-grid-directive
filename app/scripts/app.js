@@ -2,12 +2,7 @@
 
 'use strict';
 
-angular
-  .module('griddirApp', [
-    'ngResource',
-    'ngRoute',
-    'ngGrid'
-  ])
+angular.module('griddirApp', ['ngResource','ngRoute','ngGrid'])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
@@ -25,6 +20,14 @@ angular
       .when('/multiselect', {
         templateUrl: 'views/multiselect.html',
         controller: 'MultiselectCtrl'
+      })
+      .when('/bs3tabs', {
+        templateUrl: 'views/bs3tabs.html',
+        controller: 'Bs3tabsCtrl'
+      })
+      .when('/newsnet', {
+        templateUrl: 'views/newsnet.html',
+        controller: 'NewsnetCtrl'
       })
       .otherwise({
         redirectTo: '/'

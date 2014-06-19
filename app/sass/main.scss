@@ -101,3 +101,36 @@ color: white;
     width:150px;
   }
 }
+
+html,body,main,article,nav{
+  height: 100%
+}
+section{
+  height: calc(100% - 75px)
+}
+nav{
+  background-color: gainsboro;
+
+    overflow: auto;
+    a{
+      display: block;
+      background-color: white;
+      margin: 4px 4px 8px;
+      box-shadow: 4px 4px 0 0 #bbb;
+      padding: 5px;
+      position: relative;
+    }
+    a.active:after {
+    left: calc(100% - 10px);
+    top: 0;
+    border: solid transparent;
+    content: "";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: transparent;
+    border-right-color: white;
+    border-width: 15px;
+    }
+}

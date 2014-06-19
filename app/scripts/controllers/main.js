@@ -5,7 +5,7 @@
 angular.module('griddirApp')
   .controller('MainCtrl', function ($scope) {
     $scope.expanded = null;
-    $scope.select = function(val, span){
+    $scope.select = function(val, span, row){
       var xtra = $('#xtra');
       if( xtra.length ){
         //remove it
@@ -17,8 +17,14 @@ angular.module('griddirApp')
         return;
       }
       $scope.expanded = val;
-
-      var tr = '<tr id=xtra><td colspan="' + (span+1) + '"><h3>ALL THAT EXTRA DATA DISPLAYED HERE</h3></td></tr>';
+      var tr = '<tr id=xtra><td colspan="' + (span+1) + '">'+
+      '<b>name: {{row[0]}}</b>'+
+      '<div>{{row[1]}}</span>'+
+      '<div>{{row[2]}}</span>'+
+      '<div>{{row[3]}}</span>'+
+      '<div>{{row[4]}}</span>'+
+      '<div>{{row[5]}}</span>'+
+      '</td></tr>';
       $('#tr'+val).after(tr);
     };
   $scope.tabular = [
@@ -61,6 +67,11 @@ angular.module('griddirApp')
     ['item name 037 title details desciption information','october','480000','Wednesday','2/6/14','13:15','77%'],
   ];
   $scope.tabularHDR = [
-    "Name","Month","Amount","Day","Date","Time","Percent"
+    'Name','Month','Amount','Day','Date','Time','Percent'
   ];
+  $('#pdTabs a').click(function(e) {
+    e.preventDefault();
+    $(this).tab('show');
+  });
+
 });
